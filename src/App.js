@@ -4,7 +4,7 @@ import {
   FormControl,
   FormLabel,
   Switch,
-  HStack,
+  SimpleGrid,
   VStack,
 } from '@chakra-ui/react';
 import Product from './components/product/product';
@@ -50,7 +50,7 @@ function App() {
   return (
     <ChakraProvider theme={MyNewTheme}>
       <VStack height="100vh" justifyContent="center" spacing="75px">
-        <HStack>
+        <SimpleGrid columns={{ sm: 1, md: 3 }}>
           {data.map(({ name, desc, productValue, logo, color1, color2 }) => (
             <Product
               value={productValue[value]}
@@ -61,7 +61,7 @@ function App() {
               color2={color2}
             ></Product>
           ))}
-        </HStack>
+        </SimpleGrid>
 
         <FormControl display="flex" alignItems="center" justifyContent="center">
           <FormLabel mx="12px" my="0" textAlign="right" width="200px">

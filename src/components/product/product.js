@@ -54,7 +54,6 @@ const Product = ({ value, name, desc, logo, color1, color2 }) => {
       />
       <Circle
         style={{
-          background: 'rgb(255,255,255)',
           background:
             'linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 100%)',
           position: 'absolute',

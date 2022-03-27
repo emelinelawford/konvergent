@@ -64,7 +64,7 @@ function App() {
         </SimpleGrid>
 
         <FormControl display="flex" alignItems="center" justifyContent="center">
-          <FormLabel mx="12px" my="0" textAlign="right" width="200px">
+          <FormLabel mx="12px" my="0" textAlign="right" width="80px">
             Current
           </FormLabel>
           <Switch
@@ -74,7 +74,7 @@ function App() {
             onChange={handleChange}
             isChecked={value === 'target'}
           />
-          <FormLabel mx="12px" my="0" textAlign="left" width="200px">
+          <FormLabel mx="12px" my="0" textAlign="left" width="80px">
             Target
           </FormLabel>
         </FormControl>

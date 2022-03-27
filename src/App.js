@@ -49,7 +49,11 @@ function App() {
 
   return (
     <ChakraProvider theme={MyNewTheme}>
-      <VStack height="100vh" justifyContent="center" spacing="75px">
+      <VStack
+        height="100vh"
+        justifyContent="center"
+        spacing={{ base: '25px', md: '75px' }}
+      >
         <SimpleGrid columns={{ sm: 1, md: 3 }}>
           {data.map(({ name, desc, productValue, logo, color1, color2 }) => (
             <Product
